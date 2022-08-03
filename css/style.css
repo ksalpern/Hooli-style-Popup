@@ -68,7 +68,7 @@ img { height: auto; vertical-align: top; }
 .user-item .user { background-color: #b4ebe2; color: #383531; }
 .user-item .user .user__img { width: 24px; }
 
-.popup__more-name { display: block; color: #1b1818; font-size: 14px; padding: 4px; cursor: pointer; width: 80%; margin: 0 auto; color: #1f1a1a; align-items: center; vertical-align: baseline; }
+.popup__more-name { display: block; color: #1b1818; font-size: 14px; padding: 4px; cursor: pointer; width: 80%; margin: 0 auto; color: #1f1a1a; align-items: center; }
 
 .even-more { display: inline; padding-bottom: 8px; }
 
