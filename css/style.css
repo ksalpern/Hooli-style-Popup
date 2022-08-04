@@ -2,7 +2,7 @@ html { box-sizing: border-box; height: 100%; }
 
 *, *::after, *::before { box-sizing: inherit; padding: 0; margin: 0; }
 
-body { min-width: 320px; overflow-x: hidden; height: 100%; }
+body { min-width: 320px; overflow-x: hidden; height: 100%; font-family: Montserrat; }
 
 ol, ul { list-style: none; }
 
@@ -34,7 +34,7 @@ img { height: auto; vertical-align: top; }
 .popup__wrapper { display: none; position: absolute; top: 56px; right: -80px; overflow: hidden; width: 256px; height: 320px; padding: 4px; background-color: aliceblue; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; z-index: 1; }
 .popup__wrapper .popup__content { height: 320px; overflow: auto; }
 .popup__wrapper .popup__content .popup__items { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; padding-top: 8px; }
-.popup__wrapper .popup__content .popup__items .popup__item { display: flex; justify-content: center; align-items: flex-end; text-align: center; margin-bottom: 8px; }
+.popup__wrapper .popup__content .popup__items .popup__item { display: flex; justify-content: center; align-items: flex-end; text-align: center; margin: 8px 4px 0px 4px; }
 .popup__wrapper .popup__content .popup__items .popup__item .popup__item-icon { display: inline-block; width: 70px; height: fit-content; text-align: center; cursor: pointer; border: 1px solid transparent; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; margin-bottom: 8px; padding: 4px 0; }
 .popup__wrapper .popup__content .popup__items .popup__item .popup__item-icon .popup__item-name { display: block; color: #1b1818; font-size: 12px; padding-top: 12px; }
 .popup__wrapper .popup__content .popup__items .popup__item .popup__item-icon .popup__item-name:hover { text-decoration: underline; }
@@ -50,10 +50,13 @@ img { height: auto; vertical-align: top; }
 .icon { max-height: 36px; margin-bottom: 4px; margin-top: 8px; }
 
 .popup__more-items { display: none; flex-wrap: wrap; margin-top: 12px; }
-.popup__more-items .popup__more-item .popup__more-icon { padding-top: 4px; display: inline-block; width: 80px; height: 100%; text-align: center; cursor: pointer; border: 1px solid transparent; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; margin-bottom: 8px; padding: 4px 0; }
-.popup__more-items .popup__more-item .popup__more-icon .popup__more-name:hover { text-decoration: underline; }
-.popup__more-items .popup__more-item .popup__more-icon:hover { background-color: #d1cbcb; }
-.popup__more-items .popup__more-item .popup__more-icon:focus { background-color: #aaa5a5; outline: none; }
+
+.popup__more-icon { padding-top: 4px; display: inline-block; width: 80px; height: 100%; text-align: center; cursor: pointer; border: 1px solid transparent; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; margin-bottom: 8px; padding: 4px 0; }
+.popup__more-icon .popup__more-name:hover { text-decoration: underline; }
+
+.popup__more-icon:hover { background-color: #d1cbcb; }
+
+.popup__more-icon:focus { background-color: #aaa5a5; outline: none; }
 
 .even-more { width: 100%; }
 
@@ -68,8 +71,14 @@ img { height: auto; vertical-align: top; }
 .user-item .user { background-color: #b4ebe2; color: #383531; }
 .user-item .user .user__img { width: 24px; }
 
+.user:focus, .user:focus-visible { outline: none; background-color: #e3e6e6; }
+
 .popup__more-name { display: flex; color: #1b1818; font-size: 14px; padding: 18px 8px 8px 8px; cursor: pointer; width: 80%; margin: 0 auto; color: #1f1a1a; align-items: center; justify-content: center; }
 
 .even-more { display: inline; padding-bottom: 8px; }
+
+.popup__more-name:hover { text-decoration: underline; background-color: #d3d4d4; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; }
+
+.popup__item-name:focus, .popup__item-name:focus-visible { outline: none; background-color: #e3e6e6; }
 
 /*# sourceMappingURL=style.css.map */
