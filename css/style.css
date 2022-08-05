@@ -2,7 +2,7 @@ html { box-sizing: border-box; height: 100%; }
 
 *, *::after, *::before { box-sizing: inherit; padding: 0; margin: 0; }
 
-body { min-width: 320px; overflow-x: hidden; height: 100%; font-family: Montserrat; }
+body { min-width: 320px; overflow-x: hidden; height: 100%; font-family: Montserrat, sans-serif; }
 
 ol, ul { list-style: none; }
 
