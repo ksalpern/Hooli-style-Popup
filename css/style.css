@@ -32,14 +32,22 @@ img { height: auto; vertical-align: top; }
 .popup__button { cursor: pointer; }
 
 .popup__wrapper { display: none; position: absolute; top: 56px; right: -80px; overflow: hidden; width: 256px; height: 320px; padding: 4px; background-color: aliceblue; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; z-index: 1; }
-.popup__wrapper .popup__content { height: 320px; overflow: auto; }
-.popup__wrapper .popup__content .popup__items { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; padding-top: 8px; }
-.popup__wrapper .popup__content .popup__items .popup__item { display: flex; justify-content: center; align-items: flex-end; text-align: center; margin: 8px 4px 0px 4px; }
-.popup__wrapper .popup__content .popup__items .popup__item .popup__item-icon { display: inline-block; width: 70px; height: fit-content; text-align: center; cursor: pointer; border: 1px solid transparent; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; margin-bottom: 8px; padding: 4px 0; }
-.popup__wrapper .popup__content .popup__items .popup__item .popup__item-icon .popup__item-name { display: block; color: #1b1818; font-size: 12px; padding-top: 12px; }
-.popup__wrapper .popup__content .popup__items .popup__item .popup__item-icon .popup__item-name:hover { text-decoration: underline; }
-.popup__wrapper .popup__content .popup__items .popup__item .popup__item-icon:hover { background-color: #d1cbcb; }
-.popup__wrapper .popup__content .popup__items .popup__item .popup__item-icon:focus { background-color: #aaa5a5; outline: none; }
+
+.popup__content { height: 320px; overflow: auto; }
+
+.popup__items { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; padding-top: 8px; }
+
+.popup__item { display: flex; justify-content: center; align-items: flex-end; text-align: center; margin: 8px 4px 0px 4px; }
+
+.popup__item-icon { display: inline-block; width: 70px; height: fit-content; text-align: center; cursor: pointer; border: 1px solid transparent; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; margin-bottom: 8px; padding: 4px 0; }
+
+.popup__item-name { display: block; color: #1b1818; font-size: 12px; padding-top: 12px; }
+
+.popup__item-name:hover { text-decoration: underline; }
+
+.popup__item-icon:hover { background-color: #d1cbcb; }
+
+.popup__item-icon:focus { background-color: #aaa5a5; outline: none; }
 
 .popup__content::-webkit-scrollbar { width: 4px; }
 
@@ -52,7 +60,8 @@ img { height: auto; vertical-align: top; }
 .popup__more-items { display: none; flex-wrap: wrap; margin-top: 12px; }
 
 .popup__more-icon { padding-top: 4px; display: inline-block; width: 80px; height: 100%; text-align: center; cursor: pointer; border: 1px solid transparent; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; margin-bottom: 8px; padding: 4px 0; }
-.popup__more-icon .popup__more-name:hover { text-decoration: underline; }
+
+.popup__more-name:hover { text-decoration: underline; }
 
 .popup__more-icon:hover { background-color: #d1cbcb; }
 
@@ -63,13 +72,16 @@ img { height: auto; vertical-align: top; }
 .even-more:hover { text-decoration: underline; }
 
 .nav__item_bell { border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; padding: 4px; }
-.nav__item_bell .bell { width: 20px; }
+
+.bell { width: 20px; }
 
 .nav__item_bell:focus, .nav__item_bell:hover, .nav__item_bell:focus-visible { background-color: #6ddddd; outline: none; }
 
 .user-item { border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; padding: 4px; }
-.user-item .user { background-color: #b4ebe2; color: #383531; }
-.user-item .user .user__img { width: 24px; }
+
+.user { background-color: #b4ebe2; color: #383531; }
+
+.user__img { width: 24px; }
 
 .user:focus, .user:focus-visible { outline: none; background-color: #e3e6e6; }
 
